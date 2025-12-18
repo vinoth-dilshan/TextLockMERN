@@ -19,8 +19,9 @@ app.get("/", (req, res) => {
 });
 app.use("/api", shareRoutes);
 app.get("/health", (req, res) => {
-  res.json({ ok: true, version: "2025-12-18-1" });
+  res.json({ ok: true });
 });
+
 
 
 app.use(errorHandler);

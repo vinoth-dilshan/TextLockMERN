@@ -21,6 +21,13 @@ app.use("/api", shareRoutes);
 app.get("/health", (req, res) => {
   res.json({ ok: true });
 });
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://textlock-frontend.onrender.com"
+  ],
+  credentials: true
+}));
 
 
 app.use(errorHandler);

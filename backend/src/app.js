@@ -18,6 +18,9 @@ app.get("/", (req, res) => {
   res.json({ ok: true, name: "TextLock API" });
 });
 app.use("/api", shareRoutes);
+app.get("/health", (req, res) => {
+  res.json({ ok: true });
+});
 
 app.use(errorHandler);
 

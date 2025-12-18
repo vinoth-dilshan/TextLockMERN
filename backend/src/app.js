@@ -24,7 +24,7 @@ app.get("/health", (req, res) => {
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://textlock-frontend.onrender.com"
+    "https://textlockmern-1.onrender.com"
   ],
   credentials: true
 }));
